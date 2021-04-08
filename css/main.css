@@ -37,10 +37,12 @@ a
 {
 	margin-left: 10px;
 	margin-right: 10px;
+	background-color: #f7f4d8;
 }
 
 .mainNav
 {
+	background-color: #f7f4d8;
 	text-align: right;
 }
 
@@ -50,14 +52,14 @@ a
 	display: none;
 }
 
-.burgerCon.slidetoggle
+.burgerCon.slideToggle
 {
 	display: block;
 }
 
 .mainNav button
 {
-	background: url(../img/burger.svg) center no-repeat;
+	background: url(../images/burger.svg) center no-repeat;
 	border: 0px;
 	width: 20px;
 	height: 20px;
@@ -79,12 +81,12 @@ a
 
 .mainNav li
 {
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #d56028;
 }
 
 .mainNav li:first-child
 {
-	border-top: 1px solid #efefef;
+	border-top: 1px solid #d56028;
 }
 
 .mainNav li:last-child
@@ -99,7 +101,7 @@ a
 
 .actionButton
 {
-	background-color: #CDD36E;
+	background-color: #d56028;
 	display: block;
 	width: 170px;
 	padding: 20px 5px 20px 5px;
@@ -122,4 +124,11 @@ a
 	max-width: 192px;
 	display: block;
 	margin: 20px auto 25px auto;
+}
+
+/* end of Nav and Header */
+
+.video section source
+{
+	max-width: 100%
 }
