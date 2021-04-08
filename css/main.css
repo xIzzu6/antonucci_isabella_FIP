@@ -2,3 +2,124 @@
 {
 	display: none;
 }
+
+img, embed, object, video
+{
+	max-width: 100%;
+}
+
+html
+{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after
+{
+	box-sizing: inherit;
+}
+
+a
+{
+	font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+	text-decoration: none;
+	transition: all .1s linear;
+}
+
+.container
+{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Nav and Header */
+
+.mainHeader
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.mainNav
+{
+	text-align: right;
+}
+
+.burgerCon
+{
+	margin-top: 20px;
+	display: none;
+}
+
+.burgerCon.slidetoggle
+{
+	display: block;
+}
+
+.mainNav button
+{
+	background: url(../img/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	transition: all .5s ease;
+}
+
+.mainNav button.expanded
+{
+	transform: rotate(90deg);
+}
+
+.mainNav li a
+{
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #d56028;
+}
+
+.mainNav li
+{
+	border-bottom: 1px solid #efefef;
+}
+
+.mainNav li:first-child
+{
+	border-top: 1px solid #efefef;
+}
+
+.mainNav li:last-child
+{
+	margin-bottom: 10px;
+}
+
+.mainNav li a:hover
+{
+	background-color: #efefef;
+}
+
+.actionButton
+{
+	background-color: #CDD36E;
+	display: block;
+	width: 170px;
+	padding: 20px 5px 20px 5px;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	margin: 20px auto 0 auto;
+	font-size: 15px;
+	transition: all .5s ease;
+}
+
+.actionButton:hover
+{
+	border-radius: 0px;
+	background-color: #C4C979;
+}
+
+.htLogo
+{
+	max-width: 192px;
+	display: block;
+	margin: 20px auto 25px auto;
+}
