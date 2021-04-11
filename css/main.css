@@ -93,14 +93,10 @@ a
 	margin-bottom: 10px;
 }
 
-/* .mainNav li a:hover
+.mainNav li a:hover
 {
-	content: "";
-	display: block;
-	width: 50px;
-	border-bottom: 2px solid #d56028;
-	margin: 5px auto 15px auto;
-} */
+	color: #f6cb32;
+}
 
 .htLogo
 {
@@ -496,5 +492,273 @@ a
 	.infoBorderBox p
 	{
 		font-size: 18px;
+	}
+}
+
+/* END OF PAGE 1 */
+
+/* PAGE 2 */
+
+#aboutCon
+{
+	margin-top: 60px;
+}
+
+#aboutCon header h2
+{
+	font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 30px;
+	color: #603913;
+}
+
+#aboutCon header h2:after
+{
+	content: "";
+	display: block;
+	width: 70px;
+	border-bottom: 2px solid #f6cb32;
+	margin: 10px auto 0 auto;
+}
+
+#logoInfo
+{
+	font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 550px;
+	color: #603913;
+}
+
+#logoInfo:after
+{
+	content: "";
+	display: block;
+	width: 70px;
+	border-bottom: 2px solid #f6cb32;
+	margin: 10px auto 0 auto;
+}
+
+.aboutBox
+{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.aboutBorderBox1
+{
+	width: 266px;
+	height: 438px;
+	background: #f7f4d8;
+	border: 1px solid #f6cb32;
+	position: absolute;
+	/* top: 170px; */
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	outline: 10px solid #f7f4d8;
+	padding: 15px 10px 10px 10px;
+}
+
+.aboutBorderBox2
+{
+	width: 266px;
+	height: 188px;
+	background: #f7f4d8;
+	border: 1px solid #f6cb32;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	outline: 10px solid #f7f4d8;
+	padding: 15px 10px 10px 10px;
+}
+
+.aboutBorderBox1 p
+{
+	color: #d56028;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+	text-align: center;
+}
+
+.aboutBorderBox2 p
+{
+	color: #d56028;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+	text-align: center;
+}
+
+#aboutLogo
+{
+	display: none;
+}
+
+@media screen and (min-width: 550px) {
+	#aboutCon header h2
+	{
+		font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 30px;
+		color: #603913;
+	}
+
+	#aboutCon header h2:after
+	{
+		content: "";
+		display: block;
+		width: 75px;
+		border-bottom: 2px solid #f6cb32;
+		margin: 10px auto 0 auto;
+	}
+
+	#logoInfo
+	{
+		font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 600px;
+		color: #603913;
+	}
+
+	#logoInfo:after
+	{
+		content: "";
+		display: block;
+		width: 75px;
+		border-bottom: 2px solid #f6cb32;
+		margin: 10px auto 0 auto;
+	}
+
+	.aboutBox
+	{
+		position: relative;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	.aboutBorderBox1
+	{
+		width: 350px;
+		height: 522px;
+		background: #f7f4d8;
+		border: 1px solid #f6cb32;
+		position: absolute;
+		/* top: 170px; */
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		outline: 10px solid #f7f4d8;
+		padding: 15px 10px 10px 10px;
+	}
+
+	.aboutBorderBox2
+	{
+		width: 350px;
+		height: 262px;
+		background: #f7f4d8;
+		border: 1px solid #f6cb32;
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		outline: 10px solid #f7f4d8;
+		padding: 15px 10px 10px 10px;
+	}
+
+	.aboutBorderBox1 p
+	{
+		color: #d56028;
+		font-size: 14px;
+		line-height: 18px;
+		font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+		text-align: center;
+	}
+
+	.aboutBorderBox2 p
+	{
+		color: #d56028;
+		font-size: 14px;
+		line-height: 18px;
+		font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 786px) {
+	.gridCon
+	{
+		display: grid;
+		grid-template-columns: repeat(9, minmax(0,1fr));
+		grid-column-gap: 30px;
+	}
+
+	#aboutCon
+	{
+		grid-column: -1/9;
+	}
+
+	#aboutCon header h2
+	{
+		grid-column: 1/-1;
+		position: absolute;
+		z-index: 100;
+		display: block;
+		font-size: 28px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#logoInfo
+	{
+		grid-column: 1/-1;
+		font-size: 28px;
+	}
+
+	.aboutBorderBox1
+	{
+		top: 100px;
+		width: 560px;
+		height: 400px;
+		grid-column: 1/-1;
+		margin: 0;
+	}
+
+	.aboutBorderBox2
+	{
+		width: 560px;
+		height: 150px;
+		grid-column: 1/-1;
+		margin: 0;
+	}
+
+	.aboutBorderBox1 p
+	{
+		grid-column: 1/-1;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+	}
+
+	.aboutBorderBox2 p
+	{
+		grid-column: 1/-1;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+	}
+
+	#aboutLogo
+	{
+		display: block;
+		grid-column: 2/8;
 	}
 }
