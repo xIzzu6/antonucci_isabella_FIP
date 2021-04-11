@@ -762,3 +762,137 @@ a
 		grid-column: 2/8;
 	}
 }
+
+/* END PAGE 2 */
+
+/* PAGE 3 */
+
+#shopCon
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+
+.shopBox
+{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 250px;
+}
+
+.shopBorderBox
+{
+	width: 256px;
+	height: 170px;
+	background: #d56028;
+	border: 1px solid #f6cb32;
+	position: absolute;
+	top: 170px;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 10px solid #d56028;
+	padding: 20px 10px 10px 10px;
+}
+
+#shop section h2
+{
+	font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+	color: #f6cb32;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#shop section h2:after
+{
+	content: "";
+	display: block;
+	width: 30px;
+	border-bottom: 2px solid #603913;
+	margin: 10px auto 15px auto;
+}
+
+#shop section p
+{
+	font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #f7f4d8;
+}
+
+#shop section img
+{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#lemonInfo
+{
+	width: 170px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#rubyInfo
+{
+	width: 170px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#belgianInfo
+{
+	width: 170px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+@media screen and (min-width: 786px) {
+	.gridCon
+	{
+		display: grid;
+		grid-template-columns: repeat(9, minmax(0,1fr));
+		grid-column-gap: 30px;
+	}
+
+	#lemonShandy
+	{
+		grid-column: 1/4;
+	}
+
+	#rubyFresh
+	{
+		grid-column: 4/7;
+	}
+
+	#belgianWhite
+	{
+		grid-column: 7/-1
+	}
+
+	.shopBorderBox
+	{
+		width: 80%;
+		top: 130px;
+		height: 235px;
+	}
+
+	#lemonInfo, #rubyInfo, #belgianInfo
+	{
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.servicesBorderBox
+	{
+		width: 80%;
+		top: 90%;
+		height: 160px;
+	}
+}
