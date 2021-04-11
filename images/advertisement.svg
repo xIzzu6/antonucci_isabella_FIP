@@ -22,6 +22,17 @@
       .cls-5 {
         fill: #f6cb32;
       }
+
+      #ALL_ORDERS_OVER_50_20_OFF_
+      {
+      	cursor: pointer;
+      }
+
+      #ALL_ORDERS_OVER_50_20_OFF_:hover
+      {
+      	fill: #603913 !important;
+      }
+      
     </style>
   </defs>
   <g id="Path_19" data-name="Path 19" class="cls-1">

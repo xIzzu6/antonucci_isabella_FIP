@@ -896,3 +896,138 @@ a
 		height: 160px;
 	}
 }
+
+/* END OF PAGE 3 */
+
+/* PAGE 4 */
+
+#adInfo
+{
+	font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #d56028;
+}
+
+.adBorderBox
+{
+	width: 266px;
+	height: 188px;
+	background: #f7f4d8;
+	border: 1px solid #f6cb32;
+	position: absolute;
+	top: 450px;
+	margin: 0;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 10px solid #f7f4d8;
+	padding: 20px 10px 10px 10px;
+}
+
+#adCon object
+{
+	display: block;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 300px;
+}
+
+#ALL_ORDERS_OVER_50_20_OFF_
+{
+	cursor: pointer;
+}
+
+#ALL_ORDERS_OVER_50_20_OFF_:hover
+{
+	fill: #603913 !important;
+}
+
+@media screen and (min-width: 420px) {
+	.adBorderBox
+	{
+		top: 550px;
+	}
+
+	#adCon object
+	{
+		margin-top: 450px;
+	}
+}
+
+@media screen and (min-width: 786px) {
+	.gridCon
+	{
+		display: grid;
+		grid-template-columns: repeat(9, minmax(0,1fr));
+		grid-column-gap: 30px;
+	}
+
+	.adBorderBox
+	{
+		display: block;
+		grid-column: 2/8;
+		top: 750px;
+		width: 600px;
+		height: 300px;
+	}
+
+	#adInfo
+	{
+		font-size: 35px;
+	}
+
+	#adCon object
+	{
+		position: absolute;
+		width: 100%;
+		grid-column: 2/8;
+		margin: 0;
+		margin-top: 400px;
+	}
+
+	.adFooter
+	{
+		display: block;
+		height: 200px;
+		background: url(../images/footerImg.png) no-repeat center top;
+		width: 100%;
+		padding-top: 10px;
+		margin-top: 700px;
+	}
+
+	.adFooter section h2
+	{
+		font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+		font-size: 20px;
+		color: #f7f4d8;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.adFooter section h2:after
+	{
+		content: "";
+		display: block;
+		width: 73px;
+		border-bottom: 2px solid #f6cb32;
+		margin: 10px auto 10px auto;
+	}
+}
+
+@media screen and (min-width: 995px) {
+	.adBorderBox
+	{
+		top: 850px;
+	}
+}
+
+@media screen and (min-width: 1165px) {
+	.adBorderBox
+	{
+		top: 950px;
+	}
+}
