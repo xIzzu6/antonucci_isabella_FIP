@@ -701,39 +701,37 @@ a
 		grid-column-gap: 30px;
 	}
 
-	#aboutCon
-	{
-		grid-column: -1/9;
+	#aboutCon header{
+		grid-column: 1/-1;
 	}
 
 	#aboutCon header h2
 	{
-		grid-column: 1/-1;
-		position: absolute;
-		z-index: 100;
-		display: block;
 		font-size: 28px;
 		margin: 0 auto;
 		text-align: center;
 	}
 
+	.aboutBox
+	{
+		grid-column: 3/8;
+	}
+
 	#logoInfo
 	{
+		margin-bottom: 900px;
 		grid-column: 1/-1;
 		font-size: 28px;
 	}
 
 	.aboutBorderBox1
 	{
-		top: 100px;
-		width: 560px;
-		height: 400px;
-		grid-column: 1/-1;
-		margin: 0;
+		position: static;
 	}
 
 	.aboutBorderBox2
 	{
+		bottom: 1000px;
 		width: 560px;
 		height: 150px;
 		grid-column: 1/-1;
@@ -1030,4 +1028,59 @@ a
 	{
 		top: 950px;
 	}
+}
+
+/* END OF PAGE 4 */
+
+/* PAGE 4 */
+
+#info
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	margin-top: 100px;
+}
+
+#contact
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#contactPg
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+	padding: 20px;
+}
+
+#submit:hover
+{
+background-color: #f7f4d8;
+}
+
+#conLinebreak
+{
+  width: 5px;
+  height: 20px;
+  color: #848688;
+}
+
+.txt
+{
+	font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
+	font-size: 14px;
+	padding: 20px;
+	color: #d56028;
+}
+
+#submit
+{
+	font-family: "DK Downward Fall", 'Cambria bold', sans-serif;
+	color: #d56028;
+	background-color: #f6cb32;
+	padding: 10px;
+	margin-top: 10px;
 }
