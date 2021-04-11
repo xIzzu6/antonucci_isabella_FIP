@@ -93,14 +93,14 @@ a
 	margin-bottom: 10px;
 }
 
-.mainNav li a:hover
+/* .mainNav li a:hover
 {
 	content: "";
 	display: block;
 	width: 50px;
 	border-bottom: 2px solid #d56028;
 	margin: 5px auto 15px auto;
-}
+} */
 
 .htLogo
 {
@@ -347,22 +347,24 @@ a
 	.mainNav
 	{
 		grid-column: 3/-1;
-		text-align: right;
+		/* text-align: right; */
 		margin: 0;
 	}
 
 	.mainNav li
 	{
 		border-bottom: none;
-		display: inline;
+		display: inline-block;
 		margin-left: 20px;
 	}
 
 	.mainNav li a
 	{
 		font-family: 'Franklin Gothic Demi', 'Cambria bold', sans-serif;
-		font-size: 14px;
-		display: inline;
+		font-size: 18px;
+		display: inline-block;
+		margin-left: 5px;
+		margin-top: 75px;
 		background-color: #f7f4d8;
 		color: #d56028;
 	}
@@ -382,5 +384,117 @@ a
 	.mainNav li:first-child
 	{
 		border-top: none;
+	}
+
+	.video
+	{
+		margin-top: 20px;
+	}
+
+	#welcomeCon header
+	{
+		grid-column: 2/9;
+		margin-top: 35px;
+	}
+
+	#welcomeCon header h2
+	{
+		font-size: 35px;
+	}
+
+	#welcomeCon header h2:after
+	{
+		width: 200px;
+		padding: 5px;
+	}
+
+	.infoBox
+	{
+		grid-column: 2/9;
+		margin-top: 30px;
+	}
+
+	.infoBorderBox p
+	{
+		font-size: 18px;
+	}
+
+	.mainFooter
+	{
+		margin: 0 auto;
+		margin-top: 230px;
+		height: 300px;
+	}
+
+	.mainFooter section h2
+	{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.contactInfo p
+	{
+		font-size: 16px;
+	}
+
+	.footerLogo
+	{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container
+	{
+		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	}
+
+	.logoCon
+	{
+		background: url(../images/bigLogo.png)
+	}
+
+	.htLogo
+	{
+		background: url(../images/bigLogo.png)
+	}
+
+	.burgerCon
+	{
+		margin-left: 20px;
+	}
+
+	.burgerMenu li a
+	{
+		font-size: 16px;
+	}
+
+	.mainHeader li a
+	{
+		font-size: 20px;
+		margin-left: 20px;
+	}
+
+	#welcomeCon header
+	{
+		grid-column: 2/9;
+		margin-top: 35px;
+	}
+
+	#welcomeCon header h2:after
+	{
+		width: 200px;
+		padding: 5px;
+	}
+
+	.infoBox
+	{
+		grid-column: 2/9;
+		margin-top: 30px;
+	}
+
+	.infoBorderBox p
+	{
+		font-size: 18px;
 	}
 }
